@@ -6,7 +6,7 @@ When export data from ShotGrid Web Page, the data will be filtered by page filte
 ## What does this script doesn't support
 Doesn't support export pivot columns.
 ## Tested on 
-python 3.10
+Python 3.10
 ## Required python package
 - urllib
 
