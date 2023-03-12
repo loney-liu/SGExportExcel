@@ -33,14 +33,17 @@ Python 3.10
 - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
 
 #### Shot Page
-"Export Excel Menu" is under "Add Shot"
+"Export Excel" is under "Add Shot" menu
 
 ![export_menu](https://user-images.githubusercontent.com/17845155/224524316-0795b99a-1fe9-4d0d-afd2-f8a84539517b.jpg)
 
 #### Exported Excel
 Exported Excel can be find under the script folder. The excel file name is %EntityType%_%datetime%.xlsx
 
-**Note**: The folder can be changed [here](https://github.com/loney-liu/SGExportExcel/blob/main/sg_excel/app.py#L67)
+**Note**: 
+
+- The folder can be changed [here](https://github.com/loney-liu/SGExportExcel/blob/main/sg_excel/app.py#L67)
+- If exported entity has too many thumbnails and internet connection isn't stable, the export process will be broken. You could find the error in log. Just run "Export Excel" again. All downloaded thumbnail won't be downloaded again. It will continue download from broken point.
 
 ![excel](https://user-images.githubusercontent.com/17845155/224524474-012e890c-d211-4fad-bb5f-ea37a01074cf.jpg)
 
