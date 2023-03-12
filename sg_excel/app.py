@@ -16,6 +16,7 @@ from shotgun_api3 import Shotgun
 # Change this if the excel need to be saved to other path. 
 # Otherwise, it is stored in the directory of the AMI script.
 folder_path = os.path.realpath(os.path.dirname(__file__))
+folder_path = os.path.join(folder_path, os.pardir)
 img_temp = ("{0}/imgs".format(folder_path))
 
 sg_log = logging.getLogger('shotgun_api3')
