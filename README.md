@@ -40,6 +40,7 @@ Python 3.10
 #### Exported Excel
 Exported Excel can be find under the script folder. The excel file name is %EntityType%_%datetime%.xlsx
 
-![excel](https://user-images.githubusercontent.com/17845155/224524474-012e890c-d211-4fad-bb5f-ea37a01074cf.jpg)
+**Note**: The folder can be changed [here](https://github.com/loney-liu/SGExportExcel/blob/main/sg_excel/app.py#L67)
 
+![excel](https://user-images.githubusercontent.com/17845155/224524474-012e890c-d211-4fad-bb5f-ea37a01074cf.jpg)
 
