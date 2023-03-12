@@ -35,43 +35,33 @@ if not os.path.exists(img_temp):
 
 def export(url):
     # Parse URL data
-    parts = urlparse(url)
-    directories = parts.path.strip('/').split('/')
-    queries = parts.query.strip('&').split('&')
-    url_data = parse_qs(parts.query)
-    
-    # Get ShotGrid query data from url data
-    ids = url_data['ids'][0].split(',')
-    # selected_ids = url_data['selected_ids']
-    cols = url_data['cols']
-    column_display_names = url_data['column_display_names']
-    scritp_user = directories[0]
-    scritp_key = directories[1]
-    user_login = url_data['user_login'][0]
-    site_url = "https://" + url_data['server_hostname'][0]
-    entity_type = url_data['entity_type'][0]
 
-    export_excel=ExportExcel(url, site_url, scritp_user, scritp_key, user_login, cols, column_display_names, entity_type, ids)
+    export_excel=ExportExcel(url)
     export_excel.export_excel()
 
 class ExportExcel():
-    def __init__(self, url, site_url, scritp_user, scritp_key,user_login, cols, column_display_names, entity_type, ids):
+    def __init__(self, url):
         self.__create_url_log(url)
         self.__first_row = 1
         self.__first_col = 1
+        
+        parts = urlparse(url)
+        directories = parts.path.strip('/').split('/')
+        # queries = parts.query.strip('&').split('&')
+        url_data = parse_qs(parts.query)
         
         # Default image size in Excel
         self.__image_size = (160, 90)
         
         # ShotGrid information
-        self.__site_url = site_url
-        self.__scritp_user= scritp_user
-        self.__scritp_key = scritp_key
-        self.__user_login = user_login
-        self.__cols = cols
-        self.__column_display_names = column_display_names
-        self.__ids = ids
-        self.__entity_type = entity_type
+        self.__site_url = "https://" + url_data['server_hostname'][0]
+        self.__scritp_user= directories[0]
+        self.__scritp_key = directories[1]
+        self.__user_login = url_data['user_login'][0]
+        self.__cols = url_data['cols']
+        self.__column_display_names = url_data['column_display_names']
+        self.__ids = url_data['ids'][0].split(',')
+        self.__entity_type = url_data['entity_type'][0]
         self.__sg = self.__create_connection()
 
         self.__col_json = self.__map_code_name()
