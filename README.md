@@ -21,11 +21,11 @@ python 3.10
 - Create [AMI](https://developer.shotgridsoftware.com/67695b40/?title=Custom+Action+Menu+Items)
 
 - Sample
+![sample image](https://github.com/loney-liu/SGExportExcel/blob/main/images/ami.jpg)
+  - Title: Export Excel
 
-- - Title: Export Excel
+  - Entity Type; Shot (can be any entity which be exported)
 
-- - Entity Type; Shot (can be any entity which be exported)
+  - URL: sgami://export_excel/<script_user>/<script_key>
 
-- - URL: sgami://export_excel/<script_user>/<script_key>
-
-- - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
+  - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
