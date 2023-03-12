@@ -16,16 +16,17 @@ python 3.10
 
 - [shotgun python api](https://developer.shotgridsoftware.com/682204e9/?title=Python+API)
 ## Setup ShotGrid Action Menu Item
-- Create a ShotGrid [script user](https://developer.shotgridsoftware.com/b6636515/?title=API+Overview#script-keys)
+#### Create a ShotGrid [script user](https://developer.shotgridsoftware.com/b6636515/?title=API+Overview#script-keys)
 
-- Create [AMI](https://developer.shotgridsoftware.com/67695b40/?title=Custom+Action+Menu+Items)
+#### Create [AMI](https://developer.shotgridsoftware.com/67695b40/?title=Custom+Action+Menu+Items)
 
-- Sample
-![sample image](https://github.com/loney-liu/SGExportExcel/blob/main/images/ami.jpg)
-  - Title: Export Excel
+#### Sample
+![ami](https://user-images.githubusercontent.com/17845155/224524235-362ff215-062c-42ff-bb17-39f6c96e5b29.jpg)
 
-  - Entity Type; Shot (can be any entity which be exported)
+- Title: Export Excel
 
-  - URL: sgami://export_excel/<script_user>/<script_key>
+- Entity Type; Shot (can be any entity which be exported)
 
-  - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
+- URL: sgami://export_excel/<script_user>/<script_key>
+
+- Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
