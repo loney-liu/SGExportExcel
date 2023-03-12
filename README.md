@@ -26,13 +26,14 @@ Python 3.10
 
 - Title: Export Excel
 
-- Entity Type; Shot (can be any entity which be exported)
+- Entity Type: Shot (can be any entity which be exported)
 
 - URL: sgami://export_excel/<script_user>/<script_key>
 
 - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
 
-- Export Excel Menu
+#### Shot Page
+"Export Excel Menu" is under "Add Shot"
 
 ![export_menu](https://user-images.githubusercontent.com/17845155/224524316-0795b99a-1fe9-4d0d-afd2-f8a84539517b.jpg)
 
