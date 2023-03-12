@@ -71,9 +71,6 @@ class ExportExcel():
         self.__excel_file = ('{0}/{1}_{2}.xlsx').format(folder_path, self.__entity_type, now_time)
 
     def __create_url_log(self, url):
-        # fh = open(('{0}/echo.log').format(folder_path), 'w')
-        # fh.write(pprint.pformat((url)))
-        # fh.close()
         logger.info(("URL: '{0}'").format(url))
 
     def __query_sg_data(self):
@@ -234,10 +231,6 @@ class ExportExcel():
                 if os.path.exists(i):
                     os.remove(i)
                     logger.info(("Image deleted: {0}").format(i))
-
-            # if os.path.exists(img_temp):
-            #     os.remove(img_temp)
-            #     logger.info(("Image temp folder deleted: {0}").format(img_temp))
 
         except Exception as e:
             logger.info(("Error: {0}").format(e))
