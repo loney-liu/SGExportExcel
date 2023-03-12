@@ -32,3 +32,4 @@ python 3.10
 - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
 
 - Export Excel Menu
+![export_menu](https://user-images.githubusercontent.com/17845155/224524316-0795b99a-1fe9-4d0d-afd2-f8a84539517b.jpg)
