@@ -1,0 +1,4 @@
+urllib
+Pillow
+openpyxl
+git+https://github.com/shotgunsoftware/python-api.git
