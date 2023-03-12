@@ -6,9 +6,9 @@ When export data from ShotGrid Web Page, the data will be filtered by page filte
 ## Tested on 
 python 3.10
 ## Required python package
-urllib
-Pillow
-openpyxl
-[shotgun python api](https://developer.shotgridsoftware.com/682204e9/?title=Python+API)
+- urllib
+- Pillow
+- openpyxl
+- [shotgun python api](https://developer.shotgridsoftware.com/682204e9/?title=Python+API)
 ## Setup ShotGrid Action Menu Item
 - This is work
