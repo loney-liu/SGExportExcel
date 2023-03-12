@@ -1,0 +1,3 @@
+urllib
+Pillow
+openpyxl
