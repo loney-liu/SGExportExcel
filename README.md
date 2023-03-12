@@ -30,3 +30,5 @@ python 3.10
 - URL: sgami://export_excel/<script_user>/<script_key>
 
 - Configure Menu Options: Include in "Add Entity" dropdown menu on Entity pages
+
+- Export Excel Menu
