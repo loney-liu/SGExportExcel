@@ -19,14 +19,10 @@ folder_path = os.path.realpath(os.path.dirname(__file__))
 folder_path = os.path.join(folder_path, os.pardir)
 img_temp = ("{0}/imgs".format(folder_path))
 
-sg_log = logging.getLogger('shotgun_api3')
-
 logging.basicConfig(filename=("{0}/{1}.log").format(folder_path, os.path.splitext(os.path.basename(__file__))[0]), 
                     format='%(asctime)s %(message)s',
                     filemode='w')
-
 logger = logging.getLogger()
-
 # Setting the threshold of logger to DEBUG
 logger.setLevel(logging.DEBUG)
 
@@ -36,7 +32,6 @@ if not os.path.exists(img_temp):
 
 def export(url):
     # Parse URL data
-
     export_excel=ExportExcel(url)
     export_excel.export_excel()
 
