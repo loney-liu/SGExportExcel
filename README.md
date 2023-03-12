@@ -39,5 +39,6 @@ python 3.10
 #### Exported Excel
 Exported Excel can be find under the script folder. The excel file name is <Entity Type>_datetime.xlsx
 
+![excel](https://user-images.githubusercontent.com/17845155/224524474-012e890c-d211-4fad-bb5f-ea37a01074cf.jpg)
 
 
